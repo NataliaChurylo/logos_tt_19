@@ -1,0 +1,239 @@
+@font-face{
+    font-family: 'Bahiy';
+    src: url(fonts/bahij-sultannahia.ttf);
+}
+
+@font-face{
+    font-family: 'ChronicaPro';
+    src: url(fonts/ChronicaPro-Regular.ttf);
+}
+
+body{
+    height: 90vh;
+    font-family: "Bahiy";
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+    color: darkslategray;
+}
+
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main{
+    height: 87vh;
+    border-radius: 20px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    width: 5%;
+    height: 55%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.blocks{
+    width: 90%;
+    height: 95%;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block1_1{
+    width: 100%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.sign{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    border-radius: 50px;
+    margin: 20px 20px 0 20px;
+    float: left;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: -20px;
+    font-weight: 100;
+}
+
+.title{
+    font-size: 14px;
+    color: lightgray;
+    font-family: 'ChronicaPro';
+}
+
+.text{
+    color: gray;
+    font-size: 20px;
+}
+
+.block1_2{
+    width: 100%;
+    height: 78%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sign1{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 50px;
+    border-radius: 50px;
+    margin: 20px 20px 0 20px;
+    float: left;
+}
+
+input[type="password"]{
+    margin-left: 20px;
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Bahiy';
+    border: 1px solid lightgray;
+    box-shadow: 0 3px 5px 0 lightgray;
+    padding-left: 10px;
+}
+
+label{
+    margin: 7px 0 5px 20px;
+    font-size: 18px;
+}
+
+button[type="submit"]{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0;
+    background-color: dodgerblue;
+    color: white;
+    margin-left: 370px;
+    margin-top: 20px;
+}
+
+.block2{
+    width: 59%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.block2_form1{
+    width: 100%;
+    height: 50%;
+}
+
+.sign2{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 50px;
+    border-radius: 50px;
+    margin: 20px 20px 0 20px;
+    float: left;
+}
+
+input[type="text"]{
+    margin-left: 20px;
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Bahiy';
+    border: 1px solid lightgray;
+    box-shadow: 0 3px 5px 0 lightgray;
+    padding-left: 10px;
+}
+
+#address{
+    height: 70px;
+}
+
+.block2_form2{
+    width: 100%;
+    height: 45%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.column1{
+    width: 47%;
+    height: 100%;
+}
+
+.column2{
+    width: 47%;
+    height: 100%;
+}
+
+.block2_form3{
+    width: 100%;
+    height: 20%;
+    margin-left: 200px;
+}
+
+.mrg{
+    margin-bottom: 10px;
+}
+
+a:hover{
+    color: dodgerblue;
+}
+
+input:focus{
+    border-color: dodgerblue;
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}

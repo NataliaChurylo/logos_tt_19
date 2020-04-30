@@ -1,0 +1,102 @@
+@font-face{
+    font-family: 'Bahiy';
+    src: url(fonts/bahij-sultannahia.ttf);
+}
+
+body{
+    height: 90vh;
+    font-family: 'Bahiy';
+}
+
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+    color: darkslategray;
+}
+
+main{
+    height: 87vh;
+    border-radius: 20px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.table{
+    width: 75%;
+    height: 60vh;
+    text-align: center;
+    margin: 100px 0;
+    font-size: 22px;
+    border-collapse: collapse;
+}
+
+td:first-child{
+    border-radius: 20px 0 0 20px;
+}
+
+td:last-child{
+    border-radius: 0px 20px 20px 0;
+}
+
+th{
+    font-weight: 100;
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+label:before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: 0.2s;
+}
+
+input[type="checkbox"]:checked + label::before{
+    content: '\2714';
+    color: whitesmoke;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+a:hover{
+    color: dodgerblue;
+}
+
+tr:hover td{
+    background-color: whitesmoke;
+}
+
+tr:hover button{
+    background-color: whitesmoke;
+}
+
+button:hover{
+    background-color: dodgerblue !important;
+    border: 1px solid dodgerblue;
+}
+
+button:hover path{
+    fill: white;
+}
