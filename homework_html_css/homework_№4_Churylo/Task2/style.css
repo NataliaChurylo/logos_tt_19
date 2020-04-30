@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.header{
+    min-height: 30px;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    border-bottom: 3px solid lightgray;
+    display: flex;
+}
+
+.logo{
+    width: 60%;
+    margin: 15px 15px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu > ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu > ul li{
+    position: relative;
+    border-right: 2px solid lightgray;
+}
+
+.menu > ul li a{
+    display: block;
+    padding: 15px 30px 15px 30px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+.menu li ul{
+    position: absolute;
+    min-width: 115px;
+    text-align: center;
+    display: none;
+}
+
+.menu li > ul li{
+    border: 1px solid lightgray;
+}
+
+.menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: white;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu-icons{
+    width: 5%;
+    height: 100vh;
+    min-height: 1000px;
+    background-color: white;
+    border-right: 3px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+}
+
+i{
+    margin: 15px 10px 10px;
+    font-size: 40px;
+}
+
+.menu-icons:hover{
+    background-color: whitesmoke;
+}
+
+i:hover{
+    border: 3px double lightgrey;
+}

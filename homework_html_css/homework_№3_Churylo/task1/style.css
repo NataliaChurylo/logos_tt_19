@@ -1,0 +1,26 @@
+.box{
+    margin: 20px auto;
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+}
+
+.box_2{
+    margin: 20px auto;
+    background-color:yellow;
+    border: 2px solid orange;
+    width: 200px;
+    height: 100px;
+}
+
+.border1 {
+    outline: 1.5px dashed red ;
+}
+
+.border2 {
+    border: 15px inset blue;
+}
+
+.border3 {
+    border-left: 5px solid black;
+}

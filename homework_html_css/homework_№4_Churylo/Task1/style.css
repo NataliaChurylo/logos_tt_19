@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'Cinzel';
+    src: url(fonts/Cinzel/Cinzel-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.f-box{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    color: white;
+    font-size: 90px;
+    font-family: 'Cinzel';
+}
+ 

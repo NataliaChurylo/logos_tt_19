@@ -1,0 +1,10 @@
+.txt{
+    height: 150px;
+    width: 500px;
+    line-height: 150px;
+    color: rgb(80, 24, 80);
+    background-color: darkorange;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bolder;
+}

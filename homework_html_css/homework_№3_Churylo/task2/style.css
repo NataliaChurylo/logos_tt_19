@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-block{
+    width: 700px;
+    min-height: 100vh;
+    background-color: wheat;
+    border: 3px solid #000;
+    margin: 0 350px;
+}
+
+.bl1{
+    width: 600px;
+    height: 70px;
+    background-color: saddlebrown;
+    margin: 30px 50px;
+}
+
+.bl2{
+    line-height: 70px;
+    background-color: white;
+    font-size: 24px;
+    margin: 0 230px;
+}
+
+.menu{
+    float: left;
+    width: 20%;
+    height: 100px;
+}
+
+.mn1{
+    background-color: cadetblue;
+}
+.mn2{
+    background-color: cornflowerblue;
+}
+.mn3{
+    background-color: khaki;
+}
+.mn4{
+    background-color: darksalmon;
+}
+.mn5{
+    background-color: darkmagenta;
+}
+
+.content{
+    width: 33.33%;
+    height: 315px;
+    /* height: 250px; */
+    float: left;
+}
+
+/* ----------------first content-block------------------ */
+
+.block_text{
+    background-color: darkgreen;
+}
+
+.text{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(12, 152, 233);
+    text-align: center;
+    line-height: 50px;
+    margin: 10px auto 25px;
+}
+
+.three{
+    width: 50%;
+    height: 55px;
+    background-color: rgb(194, 0, 0);
+    margin: auto;
+}
+
+.four{
+    float: left;
+    width: 25%;
+    height: 175px;
+    background-color: rgb(167, 240, 21);
+    margin: auto 25%;
+}
+
+.five{
+    float: left;
+    width: 25%;
+    height: 175px;
+    background-color: yellow;
+    margin: auto -25%;
+}
+
+/* ------------------second content-block---------------- */
+
+.block_letters{
+    background-color: steelblue;
+}
+   
+.a{
+    width: 100%;
+    height: 30px;
+    background-color: darkcyan;
+}
+
+.bcd{
+    float: left;
+    width: 33.333%;
+    height: 220px;
+    background-color: whitesmoke;
+}
+
+.b{
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;   
+}
+
+.b1{
+    float: left;
+    width: 50%;
+    height: 215px;
+    background-color: maroon;
+    margin-top: -150px;
+}
+
+.b2{
+    float: right;
+    width: 50%;
+    height: 115px;
+    background-color: yellowgreen;
+    margin-top: -50px;
+}
+
+.c{
+    width: 100%;
+    height: 71.25px;
+}
+
+.c1{
+    background-color: lightseagreen;
+}
+
+.c2{
+    background-color: rgb(15, 50, 248);
+}
+
+.c3{
+    background-color: rgb(166, 104, 211);
+}
+
+.c4{
+    float: left;
+    width: 50%;
+    height: 71.25px;
+    background-color: whitesmoke;
+}
+
+.c5{
+    float: left;
+    width: 50%;
+    height: 71.25px;
+    background-color: palevioletred;
+}
+
+.d1{
+    width: 100%;
+    height: 71.25px;
+    background-color: rgb(66, 253, 253);
+}
+
+.d2{
+    width: 100%;
+    height: 71.25px;
+    background-color: rgb(15, 194, 110);
+}
+
+.d3{
+    width: 100%;
+    height: 142.5px;
+    background-color: sandybrown;
+}
+
+img{
+    display: block;
+    margin: 0 25px;
+}
+
+/* ---------------third content-block---------------- */
+
+.block_numbers{
+    background-color: palevioletred;
+}
+
+.block{
+    width: 33.33%;
+    height: 30px;
+    float: left;
+}
+
+.I{
+    background-color: lightgreen;
+}
+
+.II{
+    background-color: mediumpurple;
+}
+
+.III{
+    background-color: powderblue;
+}
+
+.IV{
+    float: left;
+    width: 100%;
+    height: 44px;
+    background-color: white;
+}
+            
+.IV_red{
+    width: 60%;
+    height: 20px;
+    background-color: red;
+    margin: 12px auto;
+}
+
+.IV_black{
+    width: 40px;
+    height: 10px;
+    background-color: black;
+    margin: -22.5px auto;
+}
+
+.VI{
+    float: left;
+    width: 100%;
+    height: 44px;
+    background-color: lightgrey;
+}
+
+.VII{
+    float: left;
+    width: 33.33%;
+    height: 197px;
+    background-color: deepskyblue;
+}
+        
+.VIII{
+    float: left;
+    width: 66.67%;
+    height: 66px;
+    background-color: lightsteelblue;
+}
+
+.IX{
+    float: left;
+    width: 33.335%;
+    height: 66px;
+    background-color: mediumorchid;
+}
+        
+.X{
+    float: left;
+    width: 33.335%;
+    height: 66px;
+    background-color: moccasin;
+}
+
+.footer{
+    clear: both;
+    height: 106px; 
+    background-color: darkslategray; 
+    font-size: 24px;
+}
