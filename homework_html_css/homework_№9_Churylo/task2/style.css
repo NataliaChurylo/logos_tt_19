@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(27, 26, 26);
+}
+
+h1{
+    margin: 250px auto;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.effect{
+    width: 400px;
+    height: 150px;
+    margin: -300px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.effect div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    animation: pulsation 2.5s linear infinite;
+}
+
+.pulse1{
+    --color: 255, 0, 0;
+    background-color: red;
+}
+
+.pulse2{
+  --color: 255, 165, 0;
+  background-color: orange;
+}
+
+.pulse3{
+  --color: 255, 255, 0;
+  background-color: yellow;
+}
+
+.pulse4{
+  --color: 13, 109, 13;
+  background-color: rgb(13, 109, 13);
+}
+
+.pulse5{
+  --color: 169, 204, 245;
+  background-color: rgb(169, 204, 245);
+}
+
+.pulse6{
+  --color: 0, 0, 255;
+  background-color: blue;
+}
+
+.pulse7{
+  --color: 104, 26, 104;
+  background-color: rgb(104, 26, 104);
+}
+
+.pulse8{
+  --color: 255, 255, 255;
+  background-color: white;
+}
+
+@keyframes pulsation{
+    0% {
+        box-shadow: 0 0 0 0px rgba(var(--color), 0.7);
+      }
+      50% {
+        
+        box-shadow: 0 0 0 10px rgba(var(--color), 0.35);
+      }
+      100% {
+        box-shadow: 0 0 0 20px rgba(var(--color), 0);
+      }
+}

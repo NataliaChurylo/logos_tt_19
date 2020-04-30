@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fa7538;
+}
+
+main {
+  background-color: #63a8f7;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .blocks {
+  position: relative;
+  width: 100px;
+  height: 300px;
+  overflow: hidden;
+  border-right: 2px solid #5e8cf8;
+}
+
+main .blocks .icons {
+  width: 100px;
+  height: 300px;
+  background-color: #5a9ffa;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+}
+
+main .blocks .description {
+  width: 300px;
+  height: 300px;
+  padding: 100px 10px 0;
+  background-color: white;
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  text-align: justify;
+  white-space: wrap;
+}
+
+main .blocks:hover {
+  overflow: visible;
+  width: 400px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .blocks:hover i {
+  font-size: 65px;
+}
+
+main .blocks:hover .twitter_icon {
+  background-color: #57b3ff;
+}
+
+main .blocks:hover .facebook_icon {
+  background-color: #4444fa;
+}
+
+main .blocks:hover .linkedin_icon {
+  background-color: #3c3c91;
+}
+
+main .blocks:hover .instagram_icon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#be0d98), to(#fcfc00));
+  background-image: linear-gradient(to bottom, #be0d98, #fcfc00);
+}
+
+main .blocks:hover .youtube_icon {
+  background-color: #b41711;
+}
+
+main .blocks:hover .tumblr_icon {
+  background-color: #1f1f47;
+}
+
+main .blocks:hover .dribbble_icon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#751160), to(#f82bcc));
+  background-image: linear-gradient(to bottom, #751160, #f82bcc);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,57 @@
+body{
+    background-color: darkcyan;
+}
+
+div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 300px auto;
+    animation: animate1 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes animate1{
+    0%{
+        width: 40px;
+        height: 40px;
+        transform: rotate(45deg);
+    }
+    15%{
+        width: 42px;
+        height: 42px;
+        transform: rotate(90deg);
+        border-radius: 40%;
+    }
+
+    30%{
+        width: 45px;
+        height: 45px;
+        transform: rotate(120deg);
+        border-radius: 30%;
+    }
+    50%{
+        width: 47px;
+        height: 47px;
+        transform: rotate(180deg);
+        border-radius: 20%;
+    }
+    70%{
+        width: 50px;
+        height: 50px;
+        transform: rotate(220deg);
+        border-radius: 15%;
+    }
+    85%{
+        width: 53px;
+        height: 53px;
+        transform: rotate(270deg);
+        border-radius: 10%;
+    }
+    100%{
+        width: 55px;
+        height: 55px;
+        transform: rotate(360deg);
+        border-radius: 0%;
+    }
+}

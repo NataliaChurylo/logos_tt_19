@@ -1,0 +1,66 @@
+body{
+    background-image: url(images/space.jpg);
+    background-size: cover;
+}
+
+.earth{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    z-index: 2;
+}
+
+.orbit{
+    position: absolute;
+    top: 250px;
+    left: 425px;
+    width: 500px;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.moon{
+    position: absolute;
+    top: 250px;
+    left: 425px;
+    z-index: 3;
+    animation: moon-turn 4s linear infinite;
+}
+
+@keyframes moon-turn{
+    0%{
+        left: 500px;
+        z-index: 1;
+    }
+    15%{
+        left: 800px;
+        top: 240px;
+        z-index: 1;
+    }
+    20%{
+        z-index: 3;
+    }
+    35%{
+        left: 910px;
+        top: 270px;
+    }
+    45%{
+        left: 820px;
+        top: 350px;
+    }
+    75%{
+        left: 500px;
+        top: 360px;
+    }
+    90%{
+        left: 370px;
+        top: 290px;
+    }
+    100%{
+        left: 480px;
+        top: 230px;
+        z-index: 1;
+    }
+}

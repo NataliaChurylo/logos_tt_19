@@ -1,0 +1,43 @@
+.heading{
+  padding: 0 20%;
+  white-space: nowrap;
+  min-height: 10rem;
+  background-color: #563d7c;
+}
+
+.main{
+  padding: 0 20%;
+}
+
+p{
+  text-align: justify;
+}
+
+.conteiner{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.position{
+  padding-left: 21%;
+  white-space: nowrap;
+}
+
+.btn-outline-primary{
+  border: 1px solid #7550ad;
+  color: #7550ad;
+}
+
+.btn-warning{
+  color: white;
+}
+
+footer{
+  padding-left: 19%;
+  min-height: 7rem;
+  background-color: #f7f7f7;   
+}
+
+.tex-footer{
+  font-size: 0.7rem;
+}

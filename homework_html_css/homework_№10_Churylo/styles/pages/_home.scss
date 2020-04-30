@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(250, 117, 56);
+    }
+
+main{
+    background-color: $mainBlockColor;
+    margin-top: 100px;
+    display: flex;
+    .blocks{
+        position: relative;
+        @include sizeBox;
+        overflow: hidden;
+        border-right: 2px solid rgb(94, 140, 248);
+        .icons{
+            @include sizeBox;
+            background-color: rgb(90, 159, 250);
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            line-height: 300px;
+        }
+        .description{
+            width: 300px;
+            height: 300px;
+            padding: 100px 10px 0;
+            background-color: white;
+            position: absolute;
+            left: 100px;
+            bottom: 0;
+            text-align: justify;
+            white-space: wrap;
+        }
+        &:hover{
+            overflow: visible;
+            width: 400px;
+            transition: 1s;
+            i{
+                font-size: 65px;
+            }
+            .twitter_icon{
+                background-color: $twitterColor;
+            }
+            .facebook_icon{
+                background-color: $facebookColor;
+            }
+            .linkedin_icon{
+                background-color: $linkedinColor;
+            }
+            .instagram_icon{
+                background-image: linear-gradient(to bottom, $instagramColor1, $instagramColor2);
+            }
+            .youtube_icon{
+                background-color: $youtubeColor;
+            }
+            .tumblr_icon{
+                background-color: $tumblrColor;
+            }
+            .dribbble_icon{
+                background-image: linear-gradient(to bottom, $dribbbleColor1, $dribbbleColor2);
+            }
+        }
+    }
+}
+        
+  
