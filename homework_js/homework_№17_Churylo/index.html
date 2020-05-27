@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="time block-style">
+        <div class="fullDate"></div>
+        <div class="fullTime"></div>
+    </div>
+    <div class="stopwatch-block block-style">
+        <div class="stopwatch">
+            <div class="scoreboard"> 00:00:00</div>
+            <form name="button-group">
+                <button type="button" class="button-style" name="startButton">START</button>
+                <button type="button" class="button-style" name="loopButton">LOOP</button>
+                <button type="button" class="button-style" name="stopButton">STOP</button>
+                <button type="button" class="button-style" name="resetButton">RESET</button>
+            </form>
+        </div>
+        <div class="loop-block"></div>
+    </div>
+    <div class="timer-block block-style">
+        <div class="readout">
+            <div class="number">25</div>
+            <p>minutes</p>
+            <form name="plusMinus">
+                <button type="button" class="button-style button-plus" name="plus">+</button>
+                <button type="button" class="button-style button-plus" name="minus">-</button>
+            </form>
+        </div>
+        <form name="timer-button" class="display">
+            <div class="timer-display">00:00</div>
+            <button type="button" class="button-style" name="startTimer">START</button>
+            <button type="button" class="button-style" name="stopTimer">STOP</button>
+            <button type="button" class="button-style" name="resetTimer">RESET</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

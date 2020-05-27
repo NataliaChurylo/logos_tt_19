@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Digital";
+    src: url(16198.ttf)
+}
+
+body{
+    font-family: "Digital";
+    background-color: rgb(3, 3, 53);
+    color: rgb(132, 223, 253);
+    text-align: center;
+}
+
+.block-style{
+    height: 190px;
+    border: 1px solid rgb(132, 223, 253);
+    margin-bottom: 20px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullDate{
+    height: 25%;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.fullTime{
+    height: 75%;
+    font-size: 86px;
+}
+
+.stopwatch-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch{
+    width: 50%;
+    height: 80%;
+}
+
+.scoreboard{
+    height: 70%;
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.button-style{
+    width: 75px;
+    height: 30px;
+    background-color: rgb(3, 3, 53);
+    color: rgb(132, 223, 253);
+    border: 1px solid rgb(132, 223, 253);
+    border-radius: 10px;
+    margin-left: 5px;
+    box-shadow: 2px 2px 4px rgba(132, 223, 253, 0.5), -2px -2px 4px rgba(132, 223, 253, 0.4);
+}
+
+button:focus{
+    outline: none;
+    border: 2px solid rgb(132, 223, 253);
+}
+
+.loop-block{
+    width: 30%;
+    height: 80%;
+    border: 1px solid rgb(132, 223, 253);
+    border-radius: 10px;
+    font-size: 24px;
+    overflow-y: scroll;
+    box-shadow: 2px 2px 10px rgba(132, 223, 253, 0.5), -2px -2px 10px rgba(132, 223, 253, 0.4);
+}
+
+.loop-block::-webkit-scrollbar{
+    background-color: rgb(3, 3, 53);
+    border: 1px solid rgb(132, 223, 253);
+    border-radius: 10px;
+}
+
+.loop-block::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(132, 223, 253);
+}
+
+.timer-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.readout{
+    width: 45%;
+    height: 80%;
+    font-size: 45px;
+    margin-left: 100px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.button-plus{
+    width: 30px;
+}
+
+.display{
+    width: 45%;
+    height: 80%;
+}
+
+.timer-display{
+    font-size: 86px;
+}
