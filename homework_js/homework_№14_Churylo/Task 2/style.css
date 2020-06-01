@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.account{
+    margin: 5% auto;
+    width: 40%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.header{
+    height: 70px;
+    background-color: rgb(36, 116, 36);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+
+.label{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.field,.accept{
+    margin: 10px 20px;
+}
+
+.check{
+    margin-left: 20px;
+}
+
+.field{
+    width: 92%;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.accept{
+    width: 92%;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(36, 116, 36);
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button:focus{
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+    border: lightblue;
+    box-shadow: 2px 2px 4px rgb(173, 216, 230), -2px -2px 4px rgb(173, 216, 230);
+}
+
+select:focus{
+    outline: none;
+    border: lightblue;
+    box-shadow: 2px 2px 4px rgb(173, 216, 230), -2px -2px 4px rgb(173, 216, 230);
+}
+
+.profile{
+    margin: 5% auto;
+    width: 40%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: none;
+}
+
+header{
+    height: 150px;
+    background-color: rgb(36, 116, 36);
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signOut{
+    width: 50%;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    background-color: green;
+    border: 0;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.icons-person{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 15px solid white;
+    position: absolute;
+    top: 150px;
+    background-size: cover;
+}
+
+footer{
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(36, 116, 36);
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

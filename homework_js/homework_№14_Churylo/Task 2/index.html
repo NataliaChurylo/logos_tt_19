@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_14_2</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="account">
+        <div class="header">
+            Create your account
+        </div>
+        <form name="registration-form">
+            <label for="firstname" class="label">First Name</label>
+            <input type="text" id="firstname" name="fname" class="field" placeholder="Type here...">
+            <label for="secondname" class="label">Second Name</label>
+            <input type="text" id="secondname" name="sname" class="field" placeholder="Type here...">
+
+            <label for="email" class="label">Email address</label>
+            <input type="text" id="email" name = "email" class="field" placeholder="Enter email"> <br> <br>
+
+            <input type="radio" name="gender" id="man" class="check man" checked>
+            <label for="man">man</label>
+            <input type="radio" name="gender" id="woman" class="check woman">
+            <label for="woman">women</label> <br> <br>
+            
+            <label for="position" class="label">Position</label>
+            <select name="speciality" id="position" class="field">
+                <option selected disabled>Choose...</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="QC/QA">QC/QA</option>
+            </select> <br> <br>
+            
+            <input type="checkbox" id="agree" class="check" name="checkAgree">
+            <label for="agree">I agree all statements in Terms of service</label> <br> <br>
+            
+            <button type = "button" class="accept" name="accept" disabled>Sign Up</button>
+        </form>
+    </div>
+    <div class="profile">
+        <header></header>
+        <div class="info">
+            <div class="icons-person"></div>
+            <h3></h3> <br> <br>
+            <span class="email"></span> <br> <br>
+            <span class="position"></span> <br>
+            <button class="signOut">Sign Out</button>
+        </div>
+        <footer>
+            <i class="uil uil-facebook-f"></i>
+            <i class="uil uil-github-alt"></i>
+            <i class="uil uil-linkedin-alt"></i>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
