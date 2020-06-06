@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_20</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="loginForm">
+        <label for="login">Login</label>
+        <input type="text" name="login" placeholder="Enter login">
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter password">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter email">
+        <button type="button" class="addUser" name="addUser">Add user</button>
+        <button type="button" class="editUser" name="editUser">Edit user</button>
+    </form>
+    
+    <table>
+        <thead>
+            <th>#</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>

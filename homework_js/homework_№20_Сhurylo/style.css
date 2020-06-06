@@ -1,0 +1,91 @@
+body{
+    margin: 50px auto;
+    width: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    width: 500px;
+}
+
+label{
+    width: 100%;
+}
+
+input{
+    margin: 10px auto;
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input:focus{
+    outline: none;
+    border: 3px solid rgb(127, 172, 255);
+}
+
+button:focus{
+    outline: none;
+}
+
+.addUser, .editUser{
+    width: 20%;
+    height: 40px;
+    font-size: 18px;
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.editUser{
+    display: none;
+}
+
+.addUser:focus, .editUser:focus{
+    background-color: green;
+    color: white;
+}
+
+
+table{
+    margin-top: 20px;
+    width: 600px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+th{
+    padding: 10px 0;
+}
+
+.edit, .delete{
+    width: 80%;
+    height: 30px;
+    font-size: 16px;
+    background-color: orange;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.delete{
+    background-color: rgb(226, 62, 62);
+}
+
+.edit:focus{
+    background-color: rgb(224, 146, 0);
+}
+
+.delete:focus{
+    background-color: rgb(190, 54, 54);
+}
+
+
