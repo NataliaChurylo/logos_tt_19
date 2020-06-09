@@ -1,0 +1,73 @@
+hr{
+    border: 1px solid $color;
+}
+
+.nav_footer{
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 2%;
+    @include flexDisplay(space-around,baseline);
+    @media screen and (max-width:768px){
+        height: 18vh;
+        margin-bottom: 5%;
+    }
+    @media screen and (max-width: 496px){
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 30vh;
+        margin: 0 auto 5%;
+    }
+    .logo-footer{
+        margin-top: 3%;
+        font-size: 24px;
+        font-family: 'Monserrat';
+        color: $color;
+        @media screen and (min-width: 497px) and (max-width: 767px){
+            font-size: 18px;
+        }
+    }
+    .company{
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 496px){
+            flex-wrap: wrap;
+            flex-direction: row;
+            div{
+                width: 220px;
+                text-align: center;
+            }
+        }
+    }
+    .partners{
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 496px){
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+    .title-footer{
+        color: black;
+        font-size: 16px;
+        font-family: 'Monserrat-Bold';
+    }
+    .text-footer{
+        font-size: 14px;
+        font-family: 'Roboto';
+        color: gray;
+        @media screen and (max-width: 496px){
+            margin: 0 6px;
+        } 
+    }
+    .design{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .title-footer-light{
+        font-family: 'Monserrat-Bold';
+        color: gray;
+    }
+}

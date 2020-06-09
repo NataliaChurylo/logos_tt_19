@@ -1,0 +1,334 @@
+// -----------------Title----------------
+.main-title{
+    width: 100%;
+    height: 10%;
+    margin: 5% 0 2%;
+    @include flexCenterRow;
+    .title{
+        font-size: 30px;
+        font-family: 'Monserrat-Bold';
+        text-align: center;
+        @media screen and (max-width: 1024px){
+            font-size: 22px;
+        }
+        @media screen and (max-width: 496px){
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// ------------------Block Step---------------
+
+.title-step{
+    width: 65%;
+    height: 48vh;
+    margin-left: 17%;
+    margin-bottom: 5%;
+    display: flex;
+    @media screen and (max-width: 1024px){
+        width: 97%;
+        margin-left: 1%;
+    }
+    @media screen and (max-width: 768px){
+        width: 97%;
+        height: 45vh;
+        margin-left: 1%;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 97%;
+        height: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .title-all{
+        width: 100%;
+        @include flexDisplay(space-between,center);
+        flex-direction: column;
+        .title-step1_bgIMG{
+            @include titleBGImage;
+            background-image: url(../assets/images/2.jpg);
+        }
+        .title-step2_bgIMG{
+            @include titleBGImage;
+            background-image: url(../assets/images/3.jpg);
+        }
+        .title-step3_bgIMG{
+            @include titleBGImage;
+            background-image: url(../assets/images/4.jpg);
+        }
+        .title-step_text{
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 80%;
+            text-align: justify;
+            @media screen and (min-width: 320px) and (max-width: 767px){
+                margin-top: 28%;
+            }
+            .btn-step{
+                @include stepButton;
+            }
+            .step-mainTitle{
+                color: $textColorHeader;
+                font-size: 20px;
+                font-family: 'Monserrat-Bold', sans-serif;
+            }
+            .step-description{
+                color: $textColorHeader;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+}
+
+// -----------------------Block Partners-----------------
+
+.persons{
+    width: 65%;
+    height: 100%;
+    margin-left: 17%;
+    margin-bottom: 5%;
+    display: flex;
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        flex-wrap: wrap;
+        width: 700px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 497px) and (max-width: 768px){
+        flex-wrap: wrap;
+        width: 500px;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 496px){
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 236px;
+    }
+    .persons-all{
+        width: 100%;
+        @include flexDisplay(space-between,center);
+        flex-direction: column;
+        @media screen and (min-width: 769px) and (max-width: 1024px){
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 497px) and (max-width: 768px){
+            width: 240px;
+            height: 240px;
+        }
+        .persons-img1{
+            @include personsIMG;
+            background-image: url(../assets/images/12.jpg);
+        }
+        .persons-img2{
+            @include personsIMG;
+
+            background-image: url(../assets/images/13.jpg);
+        }
+        .persons-img3{
+            @include personsIMG;
+            background-image: url(../assets/images/14.jpg);
+        }
+        .persons-img4{
+            @include personsIMG;
+            background-image: url(../assets/images/15.jpg);
+        }
+        .persons-icons{
+            @include personsIcons;
+            background-color: $color;
+            &:hover{
+                background-color: rgb(180, 83, 27);
+            }
+            i{
+                position: absolute;
+                top: 20%;
+                left: 10%;
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .persons-mainTitle{
+            margin-top: 5%;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Monserrat-Bold', sans-serif;
+            align-items: baseline;
+        }
+        .persons-description{
+            width: 90%;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            align-items: baseline;
+            @media screen and (min-width: 497px) and (max-width: 1024px){
+                width: 100%;
+                margin-bottom: 10%;
+            }
+            @media screen and (max-width: 496px){
+                width: 100%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+.persons-button{
+    @include flexCenterRow;
+    .btn-person{
+        width: 15%;
+        height: 40px;
+        background-color: white;
+        color: $color;
+        text-align: center;
+        font-family: 'Monserrat-Bold', sans-serif;
+        border: 2px solid $color;
+        border-radius: 20px;
+        &:hover{
+            font-size: 16px;
+            transform: scale(1.1);
+        }
+        &:focus{
+            color: rgb(180, 83, 27);
+            border: 2px solid rgb(180, 83, 27);
+        }
+        @media screen and (max-width: 1024px){
+            width: 25%;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px){
+            width: 85%;
+        }
+    }
+}
+
+// ---------------------Block Activity--------------------
+
+.activity{
+    width: 65%;
+    height: 100vh;
+    margin-left: 17%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 1024px){
+        width: 97%;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 97%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .activity-img1{
+        @include activitySmallImg;
+        background-image: url(../assets/images/5.jpg);
+        
+    }
+    .activity-img2{
+        @include activitySmallImg;
+        background-image: url(../assets/images/6.jpg);
+    }
+    .activity-img3{
+        @include activitySmallImg;
+        background-image: url(../assets/images/7.jpg);
+    }
+    .activity-img4{
+        @include activitySmallImg;
+        background-image: url(../assets/images/8.jpg);
+    }
+    .activity-img5{
+        @include activityBigImg;
+        background-image: url(../assets/images/9.jpg);
+        background-position: right;
+    }
+    .activity-img6{
+        @include activityBigImg;
+        background-image: url(../assets/images/10.jpg);
+        background-position: center;
+    }
+    .activity-img7{
+        @include activitySmallImg;
+        background-image: url(../assets/images/11.jpg);
+    }
+    .activity-description{
+        font-size: 22px;
+        font-family: 'Monserrat-Bold', sans-serif;
+        color: white;
+        text-align: center;
+    }
+}
+
+// -----------------------block Question-------------
+.question{
+    @include flexCenterRow;
+    height: 15%;
+    .question-text{
+        font-size: 20px;
+        font-family: 'Roboto';
+        @media screen and (max-width: 1024px){
+            font-size: 16px;
+        }
+        @media screen and (max-width: 496px){
+            margin-bottom: 5%;
+        }
+    }
+}
+
+.question-form{
+    display: flex;
+    margin: 2% 0 5% 35%;
+    width: 40%;
+    height: 5vh;
+    @media screen and (max-width: 768px){
+        width: 80%;
+        margin: 2% auto 5%;
+    }
+    @media screen and (max-width: 496px){
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    #field1{
+        width: 50%;
+        padding-left: 2%;
+        font-family: 'Roboto';
+        background: white;
+        border: 1px solid lightgray;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        @media screen and (max-width: 768px){
+            width: 60%;
+        }
+        @media screen and (max-width: 496px){
+            width: 100%;
+            height: 40px;
+            margin-bottom: 5%;
+        }
+        &:focus{
+            border: 1px solid $color; 
+        }
+    }
+    #btn-question{
+        width: 25%;
+        margin-left: 3%;
+        background-color: $color;
+        color: $textColorHeader;
+        font-family: 'Monserrat-Bold';
+        border: 0;
+        border-radius: 20px;
+        @media screen and (max-width: 768px){
+            width: 30%;
+            height: 40px;
+            margin: 0 auto 5%;
+        }
+        @media screen and (max-width: 496px){
+            width: 90%;
+            height: 40px;
+            margin: 0 auto 5%;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+} 

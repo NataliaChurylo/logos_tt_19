@@ -1,0 +1,113 @@
+header{
+    background-image: url(../assets/images/1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 768px){
+        height: 78vh;
+    }
+    @media screen and (min-width: 320px) and (max-width: 496px){
+        height: 70vh;
+    }
+    .nav-head{
+        height: 20%;
+        @include flexCenterRow;
+        .logo{
+            width: 50%;
+            color: $textColorHeader;
+            font-size: 30px;
+            font-family: 'Monserrat-Bold';
+            @media screen and (max-width: 496px){
+                display: none;
+            }
+        }
+        .menu {
+            @include flexDisplay(space-between,center);
+        }
+        .menu a{
+            width: 50%;
+            font-family: 'Roboto';
+            color: $textColorHeader;
+            &:hover{
+                transform: scale(1.1);
+            }
+            .border-menu{
+                height: 10%;
+                width: 130%;
+                border: 3px solid $textColorHeader;
+                border-radius: 20px;
+                padding: 5px;
+            }
+        }
+    }
+    .title-head{
+        height: 80%;
+        @include flexCenterColumn;
+        .h1{
+            height: 25%;
+            width: 50%;
+            color: $textColorHeader;
+            font-size: 48px;
+            font-family: 'Monserrat-Bold';
+            text-align: center;
+            @media screen and (max-width: 1024px){
+                font-size: 34px;
+            }
+            @media screen and (max-width: 496px){
+                width: 80%;
+                font-size: 30px;
+            }
+        }
+        .site-name{
+            color: white;
+            font-size: 22px;
+            font-family: 'Monserrat';
+            display: none;
+            @media screen and (max-width: 496px){
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+        .span-head{
+            color: $textColorHeader;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Roboto';
+            @media screen and (max-width: 496px){
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        .btn-head{
+            margin-top: 3%;
+            height: 7%;
+            width: 16%;
+            background-color: $color;
+            color: $textColorHeader;
+            font-size: 16px;
+            font-family: 'Roboto';
+            border: 0;
+            border-radius: 20px;
+            @media screen and (max-width: 1024px){
+                width: 25%;
+            }
+            @media screen and (max-width: 768px){
+                width: 45%;
+                margin: 3% auto;
+            }
+            @media screen and (max-width: 496px){
+                width: 85%;
+                margin: 3% auto;
+            }
+            &:hover{
+                transform: scale(1.1);
+                font-size: 16px;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}

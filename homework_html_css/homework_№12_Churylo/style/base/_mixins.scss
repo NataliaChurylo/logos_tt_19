@@ -1,0 +1,128 @@
+@font-face{
+    font-family: 'Monserrat-Bold';
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Monserrat';
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto-Light.ttf);
+}
+
+@mixin flexCenterColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCenterRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexDisplay($justify,$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin titleBGImage{
+    width: 95%;
+    height: 60vh;
+    background-size: cover;
+    background-position: bottom;
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 100%;
+        height: 32vh;
+        margin-bottom: 3%;
+    }
+}
+
+@mixin textStepBox{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100%;
+    text-align: justify;
+}
+
+@mixin stepButton {
+    height: 10%;
+    width: 25%;
+    background-color: $color;
+    color: $textColorHeader;
+    text-align: center;
+    font-family: 'Monserrat';
+    border: 0;
+    border-radius: 10px;
+}
+
+@mixin personsIMG {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+@mixin personsIcons {
+    position: absolute;
+    top: 70%;
+    right: -5%;
+    width: 35%;
+    height: 35%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+@mixin  activitySmallImg {
+    width: 32%;
+    height: 31%;
+    background-color: lightgray;
+    background-size: cover;
+    opacity: .7;
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 100%;
+        height: 16vh;
+        margin-bottom: 2%;
+        background-position: center;
+    }
+    @include flexCenterRow;
+    &:hover{
+        opacity: 1;
+        transform: scale(1.07);
+        transition: 2s;
+        .activity-description{
+            opacity: 0;
+        }
+    }
+}
+
+@mixin  activityBigImg {
+    width: 66%;
+    height: 31%;
+    background-color: lightgray;
+    background-size: cover;
+    opacity: 0.7;
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 100%;
+        height: 16vh;
+        margin-bottom: 2%;
+        background-position: center;
+    }
+    @include flexCenterRow;
+    &:hover{
+        opacity: 1;
+        transform: scale(1.04);
+        transition: 2s;
+        .activity-description{
+            opacity: 0;
+        }
+    }
+}
