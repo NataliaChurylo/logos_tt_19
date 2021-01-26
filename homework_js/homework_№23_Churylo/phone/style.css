@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img{
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    z-index: 0;
+}
+
+.block{
+    width: 180px;
+    height: 315px;
+    position: absolute;
+    left: 665px;
+    top: 111px;
+    z-index: 1;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-black{
+    background-color: black;
+    display: none;
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 710px;
+    top: 230px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.minute{
+    font-size: 36px;
+}

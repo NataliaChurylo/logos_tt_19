@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 20px auto;
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.start-puzzle, .end-puzzle{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.start-puzzle{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.end-puzzle{
+    background-image: url(husky.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.picture{
+    width: 150px;
+    height: 150px;
+    background-image: url(husky.jpg);
+}
+
+.piece1{
+    background-position: 0 0;
+}
+
+.piece2{
+    background-position: 150px 0;
+}
+
+.piece3{
+    background-position: 300px 0;
+}
+
+.piece4{
+    background-position: 450px 0;
+}
+
+.piece5{
+    background-position: 0 150px;
+}
+
+.piece6{
+    background-position: 150px 150px;
+}
+
+.piece7{
+    background-position: 300px 150px;
+}
+
+.piece8{
+    background-position: 450px 150px;
+}
+
+.piece9{
+    background-position: 0 300px;
+}
+
+.piece10{
+    background-position: 150px 300px;
+}
+
+.piece11{
+    background-position: 300px 300px;
+}
+
+.piece12{
+    background-position: 450px 300px;
+}
+
+.piece13{
+    background-position: 0 450px;
+}
+
+.piece14{
+    background-position: 150px 450px;
+}
+
+.piece15{
+    background-position: 300px 450px;
+}
+
+.piece16{
+    background-position: 450px 450px;
+}
