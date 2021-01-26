@@ -1,0 +1,16 @@
+.background-box{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+}
+
+.small-box{
+    width: 33%;
+    height: 32.6%;
+    border: 1px solid #000;
+}

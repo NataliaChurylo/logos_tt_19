@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightpink;
+}
+
+.keyboard{
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+textarea{
+    width: 800px;
+    height: 150px;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: none;
+    resize: none;
+    overflow: hidden;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.bigButtons{
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallButtons{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
